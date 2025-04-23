@@ -2,7 +2,7 @@
 
 Admin::Admin() : User() {}
 
-Admin::Admin(string &a, string &b, bool &c) : User(a, b, c) {}
+Admin::Admin(string &a, string &b, bool &c, string &d) : User(a, b, c, d)  {}
 
 void Admin::show_Menu()
 {
@@ -44,7 +44,7 @@ void Admin::show_Menu()
         break;
 
     default:
-        cerr << "Please enter a valid choice (From 1-4)....\n";
+        cerr << "Please enter a valid choice (From 1-4)\n";
         break;
     }
 }

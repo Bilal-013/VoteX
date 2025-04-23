@@ -2,7 +2,7 @@
 
 Voter::Voter() : User() {}
 
-Voter::Voter(string &a, string &b, bool &c) : User(a, b, c) {}
+Voter::Voter(string &a, string &b, bool &c, string &d) : User(a, b, c, d) {}
 
 void Voter::show_Menu()
 {
@@ -11,7 +11,7 @@ void Voter::show_Menu()
             "\t\t\t\t\t1. Cast votes\n"
             "\t\t\t\t\t2. View Results\n"
             "\t\t\t\t\t3. Logout\n"
-            "\t\t\t\t\tEnter correct choice:  ";
+            "\t\t\t\t\tEnter correct choice(1-3):  ";
     cin >> x;
     switch (x)
     {

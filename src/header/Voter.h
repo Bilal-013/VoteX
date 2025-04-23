@@ -8,9 +8,9 @@ private:
 public:
     Voter();
 
-    Voter(string &, string &, bool &);
+    Voter(string &, string &, bool &, string &);
 
-    
+
 
     void show_Menu() override;
 };

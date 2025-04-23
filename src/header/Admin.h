@@ -11,8 +11,7 @@ private:
 
 public:
     Admin();
-    Admin(string &, string &, bool &);
-
+    Admin(string &, string &, bool &, string &);
     void show_Menu() override;
 
 };
