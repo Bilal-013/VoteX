@@ -1,8 +1,9 @@
 #include "../header/Admin.h"
+#include <fstream>
 
 Admin::Admin() : User() {}
 
-Admin::Admin(string &a, string &b, bool &c, string &d) : User(a, b, c, d)  {}
+Admin::Admin(string &a, string &b, string &d) : User(a, b, d)  {}
 
 void Admin::show_Menu()
 {
@@ -46,5 +47,23 @@ void Admin::show_Menu()
     default:
         cerr << "Please enter a valid choice (From 1-4)\n";
         break;
+    }
+}
+
+void Admin::validate_user() {
+    string id, pas;
+    fstream admin_log("admin.txt", ios :: in); 
+    // if(!admin_log) {
+    //     admin_log.open("admin.txt", ios::out | ios::app);
+    // }
+    if (admin_log.is_open()) {
+        while (getline(admin_log, id, '*') && getline(admin_log, pas)) {
+            if (id == CNIC && pas == password) {
+                admin_log.close();
+                isLoggedin = true;
+            }
+            else isLoggedin = false;
+        }
+        admin_log.close();
     }
 }

@@ -2,7 +2,7 @@
 
 Candidate::Candidate(): User() {}
 
-Candidate:: Candidate(string& a, string &b, bool &c, string &d): User(a, b, c, d) {}
+Candidate:: Candidate(string& a, string &b, string &d): User(a, b, d) {}
 
 void Candidate::show_Menu()
 {

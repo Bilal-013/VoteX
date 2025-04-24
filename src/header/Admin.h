@@ -8,12 +8,19 @@ using namespace std;
 
 class Admin: public User {
 private:
-
+    fstream admin_log;
+    fstream candidate_log;
+    fstream voter_log;
+    void validate_user() override;
 public:
     Admin();
-    Admin(string &, string &, bool &, string &);
-    void show_Menu() override;
+    
+    Admin(string &, string &, string &);
+    
+    void show_Menu() override; 
 
+
+    
 };
 
 #endif

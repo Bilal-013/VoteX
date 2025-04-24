@@ -10,7 +10,7 @@ private:
 public:
     Candidate();
 
-    Candidate(string &, string &, bool &, string &);
+    Candidate(string &, string &, string &);
 
     void show_Menu() override;
 };

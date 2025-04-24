@@ -2,7 +2,7 @@
 
 Voter::Voter() : User() {}
 
-Voter::Voter(string &a, string &b, bool &c, string &d) : User(a, b, c, d) {}
+Voter::Voter(string &a, string &b, string &d) : User(a, b, d) {}
 
 void Voter::show_Menu()
 {

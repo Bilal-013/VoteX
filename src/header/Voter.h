@@ -8,7 +8,7 @@ private:
 public:
     Voter();
 
-    Voter(string &, string &, bool &, string &);
+    Voter(string &, string &, string &);
 
 
 

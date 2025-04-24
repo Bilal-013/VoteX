@@ -1,7 +1,7 @@
 #ifndef USER_H
 #define USER_H
 #include<string>
-
+#include<fstream>
 using namespace std;
 
 class User {
@@ -25,12 +25,10 @@ public:
 
     void set_role(string &);
 
-    User(string&, string&, bool&, string &);
+    User(string&, string&, string &);
 
     virtual void show_Menu() = 0;
 
-    void Validate_login(string &, string &);
-
-
+    virtual void validate_user() = 0;
 };
 #endif
