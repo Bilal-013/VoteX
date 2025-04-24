@@ -29,7 +29,7 @@ public:
 
     virtual void show_Menu() = 0;
 
-void Validate_login(string &, string &);
+    void Validate_login(string &, string &);
 
 
 };
