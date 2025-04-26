@@ -8,7 +8,7 @@ void admins_up(string &, string &);
 int main() {
 
     int var;
-    cout << "\t\t\t\t\t====Main Menu===="
+    cout << "\t\t\t\t\t====Main Menu====\n"
          << "\t\t\t\t\tHow would you like to login\n"
          << "\t\t\t\t\t1. Admin\n"
          << "\t\t\t\t\t2. Candidate\n"

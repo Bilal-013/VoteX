@@ -19,8 +19,19 @@ public:
     
     void show_Menu() override; 
 
+    void start_elections();
 
-    
+    void add_voter();
+
+    void add_cand();
+
+    void remove_voter();
+
+    void remove_cand();
+
+    void update_voter();
+
+    void update_cand();
 };
 
 #endif
