@@ -1,6 +1,5 @@
 #include"src/header/Admin.h"
 #include"src/header/Candidate.h"
-#include"src/header/User.h"
 #include"src/header/Voter.h"
 
 void admins_up(string &, string &);

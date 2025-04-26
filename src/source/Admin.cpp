@@ -3,7 +3,9 @@
 
 Admin::Admin() : User() {}
 
-Admin::Admin(string &a, string &b, string &d) : User(a, b, d)  {}
+Admin::Admin(string &a, string &b, string &d) : User(a, b, d)  {
+    validate_user();
+}
 
 void Admin::show_Menu()
 {
