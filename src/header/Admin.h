@@ -32,6 +32,12 @@ public:
     void update_voter();
 
     void update_cand();
+
+    void show_all_candidates();
+
+    void show_all_voters();
+
+    void show_eligible_voters();
 };
 
 #endif
